@@ -8,8 +8,8 @@ spring:
       client:
         registration:
           google:
-            client-id: 698924626663-9khu89ag7gjmprsriiibacrui2p8h7t3.apps.googleusercontent.com
-            client-secret: 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
+            client-id: YOUR-CLIENT-ID
+            client-secret: YOUR-CLIENT-SECRET
             authorization-grant-type: authorization_code
             redirect-uri: http://localhost:8888/Callback
             scope:
