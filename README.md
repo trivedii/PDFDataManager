@@ -52,6 +52,7 @@ Click the "Login with Google" button to authenticate with Gmail and grant the ne
 The following API endpoints are available:
 
 * **/gmail/attachments/{subject}** : Retrieves pdf attachments for a given subject, parse attachments to save the data in Mysql database 
+
 _curl --location --request POST 'http://localhost:8080/gmail/attachments/Transactions' \
 --data ''_
 
