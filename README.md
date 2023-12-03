@@ -62,11 +62,14 @@ _curl --location 'http://localhost:8080/get/allTransactions' \
 --data ''_
 
 * **/get/transactionsBetween?toDate= &fromDate=** : Retrieves a list of all transaction happend between fromDate to toDate 
+Date format : YYYY-MM-DD
 
 _curl --location 'http://localhost:8080/get/transactionsBetween?toDate=2023-12-01&fromDate=2023-11-27' \
 --data ''_
 
-* **/get/ClosingBalance** : Retrieves Balance for the last entry made on a particular date
+* **/get/ClosingBalance** : Retrieves Balance for the last entry made on a particular date 
+Date format : YYYY-MM-DD
+
 _curl --location 'http://localhost:8080/get/ClosingBalance?date=2023-12-01' \
 --data ''_
 

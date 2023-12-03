@@ -9,5 +9,5 @@ import java.util.List;
 public interface Repository extends JpaRepository<Transaction, Long> {
 
     List<Transaction> findAllByDateLessThanEqualAndDateGreaterThanEqual(LocalDate toDate, LocalDate fromDate);
-    Transaction findFirstByDateEquals(LocalDate date);
+    Transaction findFirstByDateLessThanEqual(LocalDate date);
 }

@@ -8,8 +8,8 @@ spring:
       client:
         registration:
           google:
-            client-id: your-client-id
-            client-secret: your client-secret
+            client-id: 698924626663-9khu89ag7gjmprsriiibacrui2p8h7t3.apps.googleusercontent.com
+            client-secret: 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
             authorization-grant-type: authorization_code
             redirect-uri: http://localhost:8888/Callback
             scope:
@@ -22,4 +22,4 @@ spring:
             jwk-set-uri: https://www.googleapis.com/oauth2/v3/certs
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
