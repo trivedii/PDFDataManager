@@ -36,6 +36,18 @@ Modify the application.properties file in the src/main/resources directory with 
 * spring.jpa.hibernate.ddl-auto=update
 
 create a schema named transaction_info in the Mysql.
+SQL QUERY: **CREATE SCHEMA transaction_info;**
+
+create a table name transaction in the schema transaction_info.
+SQL QUERY:  **CREATE TABLE transaction_info.transaction (
+      id int NOT NULL AUTO_INCREMENT,
+      date date ,
+      description varchar(255),
+      credit varchar(255),
+      debit  varchar(255),
+      balance  varchar(255),
+      PRIMARY KEY(id)
+      );**
 
 ## 4. Run the Application
 Run the following Maven command to build and run the Spring Boot application:
